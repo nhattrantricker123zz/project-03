@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #1ebfc1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* common */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 50px;
+    border: 1px solid #1ebfc1;
+    border-radius: 6px;
+    color: #1ebfc1;
+    padding: 0 16px;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+/* Header */
+
+.header {
+    background-color: #ffffff;
+}
+
+.header.fixed{
+    position: sticky;
+    top: -42px;
+}
+.header .body {
+    padding: 52px 0 8px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .body .list {
+    display: flex;
+}
+
+.header .nav a {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 4px 20px;
+    color: #2f3a3b;
+}
+
+.header .nav a:hover,
+.header .body .sign-in:hover
+ {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .body .sign-in {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-right: 24px;
+
+    color: #494949;
+}
+
+
