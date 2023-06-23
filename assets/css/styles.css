@@ -57,7 +57,7 @@ a {
 
 .heading.lv1 {
     color: #0d1111;
-    font-size: 4.2rem;
+    font-size: 4.6rem;
     font-weight: 700;
     line-height: 72px;
 }
@@ -70,7 +70,7 @@ a {
 .header.fixed {
     position: sticky;
     z-index: 1;
-    top: -42px;
+    top: -46px;
 }
 .header .body {
     padding: 52px 0 8px;
@@ -322,4 +322,209 @@ a {
     color: #fff;
     font-size: 0.7rem;
     font-weight: 500;
+}
+
+/* Features */
+
+.features {
+    padding-top: 130px;
+}
+
+.features .features-top {
+    width: 50%;
+}
+
+.features .features-top span {
+    color: #767e7e;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.features .features-top .heading.lv1 {
+    margin-top: 18px;
+    font-size: 3.3rem;
+}
+
+.features .features-top .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    line-height: 24px;
+    font-size: 1.33rem;
+}
+
+.features .feautres-section {
+    display: flex;
+    margin-top: 80px;
+    width: 87%;
+    align-items: center;
+}
+
+.features .feautres-section .features-item {
+    width: 33.33%;
+    margin-right: 200px;
+}
+
+.features .feautres-section .title {
+    color: #0d1111;
+    margin-top: 26px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features .feautres-section .desc {
+    width: 168px;
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.3rem;
+    line-height: 27px;
+}
+
+.features .feautres-section .desc.fix {
+    width: 223px;
+}
+
+/* Popular */
+
+.popular {
+    padding-top: 130px;
+}
+
+.popular .popular-top {
+}
+
+.popular .popular-top span {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.popular .popular-top .heading.lv1 {
+    font-size: 4.2rem;
+    margin-top: 18px;
+}
+
+.popular .popular-top .action {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .popular-top .action .desc {
+    color: #767e7e;
+    font-size: 1.4rem;
+    line-height: 32px;
+    width: 525px;
+}
+
+.popular .popular-top .action .link {
+    color: #1ebfc1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+/* Pop info */
+
+.popular .popular-info {
+    margin-top: 79px;
+}
+.popular .popular-info .popular-info-group {
+    display: flex;
+    width: 33.33%;
+    gap: 47px;
+}
+
+.popular .popular-info .popular-info-group .over-play{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    background-color: #d0efed;
+    opacity: 0.35;
+}   
+.popular .popular-info .popular-info-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 359px;
+    max-width: 100%;
+    align-items: center;
+}
+
+.popular .popular-info .popular-info-group img {
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* transform: scale(1); */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.popular .popular-info .popular-info-group img:hover {
+    cursor: pointer;
+    transform: scale(1.04); 
+    opacity: 1;
+}
+
+.popular .popular-info .popular-summary {
+    position: absolute;
+    width: 325px;
+    padding: 25px 18px 29px;
+    border-radius: 8px;
+    background: #FFF;
+    bottom: -124px;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .popular-info .heading {
+    color: #0d1111;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.popular .popular-info .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+
+.popular .popular-info strong {
+    color: #0d1111;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+.popular .popular-info .desc {
+    color: #9da6a5;
+    margin-top: 6px;
+    font-size: 1.4rem;
+}
+
+.popular .popular-info .stats {
+    margin-top: 18px;
+}
+
+.popular .popular-info .stats span {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    display: inline-flex;
+    position: relative;
+    align-items: center;    
+    margin: 0 10px;
+
+}
+.popular .popular-info .stats span::before{
+    position: absolute;
+    content: "";
+    background-color: aqua;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: -15px;
 }
