@@ -8,7 +8,6 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -732,6 +731,5 @@ a {
     align-items: center;
     margin-top: 80px;
     font-size: 1.2rem;
-    color: #B0B5B4;
-
+    color: #b0b5b4;
 }
