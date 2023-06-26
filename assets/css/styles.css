@@ -7,6 +7,8 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -27,8 +29,8 @@ a {
 
 /* common */
 .btn {
-    display: inline-block;
     font-weight: 600;
+    display: inline-block;
     font-size: 1.4rem;
     line-height: 50px;
     border: 1px solid #1ebfc1;
@@ -42,6 +44,7 @@ a {
 }
 
 .btn.bg {
+    font-weight: normal;
     min-width: 186px;
     height: 68px;
     background-color: var(--primary-color);
@@ -459,14 +462,15 @@ a {
     height: 393px;
     object-fit: cover;
     border-radius: 8px;
-    /* transform: scale(1); */
     transition: all 0.3s ease-in-out;
 }
 
-.popular .popular-info .popular-info-group img:hover {
+.popular .popular-info .popular-info-group img:hover,
+.popular-summary:hover {
     cursor: pointer;
     transform: scale(1.04);
     opacity: 1;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
 }
 
 .popular .popular-info .popular-summary {
@@ -476,7 +480,11 @@ a {
     border-radius: 8px;
     background: #fff;
     bottom: -124px;
-    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular-summary:hover {
+    cursor: pointer;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
 }
 
 .popular .popular-info .heading {
@@ -532,7 +540,6 @@ a {
     padding-top: 288px;
 }
 
-
 .qty .row-qty {
     display: flex;
     justify-content: space-between;
@@ -552,4 +559,179 @@ a {
     text-align: center;
     font-size: 1.8rem;
     margin-top: 11px;
+}
+
+/* Feedback */
+
+.feedback {
+    padding-top: 264px;
+}
+
+.feedback .body {
+    display: flex;
+}
+
+.feedback .feedback-content {
+    width: 420px;
+}
+
+.feedback .feedback-content blockquote {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 2.5rem;
+    line-height: 48px;
+}
+
+.feedback .feedback-content .name {
+    position: relative;
+    margin: 27px 0 0 5px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.feedback .feedback-content .name::after {
+    content: "";
+    display: block;
+    width: 8px;
+    position: absolute;
+    background-color: #070707;
+    height: 2px;
+    top: 11px;
+    left: -14px;
+}
+
+.feedback .feedback-content .name span {
+    color: #070707;
+    font-weight: 550;
+}
+
+.feedback .feedback-content .feedback-content-mode {
+    display: flex;
+    margin-top: 52px;
+    gap: 30px;
+}
+
+.feedback .feedback-content .feedback-content-mode .feedback-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: #fff;
+}
+
+.feedback .avatar-group {
+    position: relative;
+    width: 680px;
+    margin-left: 72px;
+}
+
+.avatar-item-one,
+.avatar-item-two,
+.avatar-item-three,
+.avatar-item-four,
+.avatar-item-five,
+.avatar-item-seven {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avatar-item-one {
+    background-color: #1ebfc1;
+    left: 144px;
+}
+.avatar-item-two {
+    background: #bf83ff;
+    top: 19px;
+    right: 0;
+}
+.avatar-item-three {
+    background-color: #ff8282;
+    top: 107px;
+    right: 171px;
+}
+.avatar-item-four {
+    background: #ffc147;
+    top: 285px;
+}
+.avatar-item-five {
+    background: #ff947a;
+    top: 403px;
+    left: 212px;
+}
+.avatar-item-seven {
+    background: #b1dfdc;
+    top: 374px;
+    right: 32px;
+}
+
+/* cta */
+
+.cta {
+    margin-top: 130px;
+    background: #def6f5;
+}
+
+.cta .body {
+    display: flex;
+    justify-content: space-between;
+    padding: 76px 0 88px;
+    align-items: center;
+}
+
+.cta .cta-content .heading {
+    color: #2e2e2e;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.cta .cta-content .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    padding: 130px 135px 157px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row .heading {
+    color: #2e2e2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.footer .row a {
+    display: block;
+    margin-top: 26px;
+    color: #535353;
+    font-size: 1.4rem;
+}
+
+.footer .row .fixed {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+}
+
+.footer .cpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 1.2rem;
+    color: #B0B5B4;
+
 }
